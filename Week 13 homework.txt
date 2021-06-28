@@ -1,0 +1,64 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+#include<vector>
+#include<cmath>
+
+using namespace std;
+
+//Problem 1
+int findArrMax(int arr[], int numElements){
+    int position = -1;
+    for(int i = 0; i < numElements; i++){
+        if (arr[i] > arr[i+1]){
+            position = i;
+        }
+        else{
+            position = i+1;
+        }
+    return position;
+    }
+}
+
+//Problem 2
+int findArrMin(int arr[], int numElements){
+    int position = -1;
+    for(int i = 0; i < numElements; i++){
+        if (arr[i] < arr[i+1]){
+            position = i;
+        }
+        else{
+            position = i+1;
+        }
+    return position;
+    }
+}
+//Problem 3
+int BSA(vector<int> vec, int val){
+    int first = 0;
+    vector<int> last;
+    bool found = false;
+    int position = -1;
+    while(found != true && first <= last){
+        vector<int>
+    
+    }
+}
+int main(){
+    srand(time(0));
+    const int arrSize = 1000;
+    int nums[arrSize];
+    for (int i = 0; i < arrSize; i++) {
+    nums[i] = rand() % 100 + 1;
+    cout << nums[i] << " ";
+    }
+
+    vector<int> numbers;
+    const int vecSize = 2000;
+    for(int i = 0; i < vecSize; i++){
+    numbers.push_back(rand() % 100 + 1);
+    cout << numbers << " ";
+    }
+
+return 0;
+}

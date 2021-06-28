@@ -1,0 +1,37 @@
+#include <iostream>
+
+
+using namespace std;
+
+//I apologize for not using the % to extract the numbers but I put in some fun stuff to accomplish the assignment.
+//I don't think I understood what you meant.
+
+int main()
+{
+    int first;
+    int second;
+    int third;
+    string sFirst;
+    string sSecond;
+    string sThird;
+
+    cout << "Please select your first number and press Enter: ";
+    cin >> first;
+    sFirst = to_string(first);
+    cout << endl;
+
+    cout << "Please select your second number and press Enter: ";
+    cin >> second;
+    sSecond = to_string(second);
+    cout << endl;
+
+    cout << "Please select your third number and press Enter: ";
+    cin >> third;
+    sThird = to_string(third);
+    cout << endl;
+
+    cout << "Your number was: " << sFirst + sSecond + sThird << endl;
+
+    cout << "(Computer plays reverse card) Your number is now: " << sThird + sSecond + sFirst << endl;
+    return 0;
+}

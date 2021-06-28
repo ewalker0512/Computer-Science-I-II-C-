@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   string firstString;  
+   string secondString;
+   int firstNumber;
+   int secondNumber;
+   int thirdNumber;
+   float firstFloat;
+   float secondFloat;
+   
+   string firstString = "Eric";
+   string secondString = "Walker";
+   int firstNumber = 42;
+   int secondNumber = 13;
+   int thirdNumber = 31;
+   float firstFloat = 2.5492;
+   float secondFloat = 7.9872;
+   
+   string exampleString = "String example";
+   int exampleInt = 5;
+   float exampleFloat = 4.232;
+   
+    return 0;
+}
+
+Variable Trace:
+
+{
+int num1 = 2;
+int num2 = 3;
+num1 = num2 * 2; num1 = 6 // * indicates multiplication
+num2 = num1 - 10; num2 = -4
+num2 = num2 + 5; num2 = 1
+num1 = num2 + num1; num1 = 7
+}
+
+num1 = 2,6,7
+num2 = 3,-4,1

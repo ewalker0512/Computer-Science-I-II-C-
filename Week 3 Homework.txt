@@ -1,0 +1,80 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+
+// Ex 1
+    int celsius;
+    int farenheit;
+
+    cout << "Enter temperature in Celsius: ";
+    cin >> celsius;
+    farenheit = (9.0/5.0) * celsius + 32.0;
+    cout << "Farenheit conversion: " << static_cast<double>(farenheit) << endl;
+    cout << endl;
+
+// Ex 2
+    double dollars;
+    double euros;
+    string sEuros;
+
+
+    cout << "Enter Dollar Value: ";
+    cin >> dollars;
+    euros = .83 * dollars;
+    sEuros = to_string(euros);
+    cout << "Processing........" << endl;
+    cout << "Total Euro Amount: " + sEuros << endl;
+    cout << endl;
+
+//Ex 3
+    double outcome;
+    double principle;
+    double interest;
+    int compound;
+    int periods;
+    string sOutcome;
+
+    cout << "Please enter starting principle balance: " << endl;
+    cin >> principle;
+    cout << "Please enter the % interest rate of the investment: " << endl;
+    cin >> interest;
+    cout << "Please enter how many times you would like to compound the investment: " << endl;
+    cin >> compound;
+    cout << "Please enter how many time periods you would like to account for: " << endl;
+    cin >> periods;
+
+    outcome = principle *(1+(interest/compound)*(compound*periods));
+    sOutcome = to_string(outcome);
+
+    cout << "Current Value: " + sOutcome << endl;
+    cout << endl;
+
+// Ex 4
+    int sideA = 28;
+    int sideB = 37;
+    int sideC;
+
+    sideC = sqrt((28*28)+(37*37));
+
+    cout << "Pythagorean theorem answer: " << sideC << endl;
+    cout << endl;
+
+// Ex 5
+
+    int aDomain = 2;
+    int aRange = 2;
+    int bDomain = 5;
+    int bRange = 5;
+    double distance;
+
+    distance = sqrt(((bDomain-aDomain)*2)+((bRange-aRange)*2));
+
+    cout << "The total distance from point A to point B is " << distance << endl;
+
+
+    return 0;
+}
