@@ -44,7 +44,9 @@ int main()
     return 0;
 }
 
+/*
 1. Write a program that uses pointer arithmetic to traverse the contents of an array.
 2. Write a do while loop that sums several numbers together, using -999 as a sentinel value
 3. Write a program that uses a switch statement to assign a letter grade to a numeric score from 0 to 100.
 4. Write a program that uses the conditional operator to curve a grade. If the grade is less than 80, add 10 to the grade, otherwise add 5 to the grade
+*/
